@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free AI Visibility Check | KRONATRIX</title>
+  <meta name="description" content="Get a free KRONATRIX AI Visibility Check. Submit your links and find out whether AI, Google and customers can understand, trust and recommend your business.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#05070d">
+
+  <meta property="og:title" content="Free AI Visibility Check | KRONATRIX">
+  <meta property="og:description" content="Find out if AI can understand, trust and recommend your business. Limited free audit spaces available each week.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="spencer-aurelius.png">
+
+  <link rel="preload" as="image" href="spencer-aurelius.webp" type="image/webp">
+
+  <style>
+    :root {
+      --bg: #05070d;
+      --panel: #0c111d;
+      --text: #ffffff;
+      --muted: #b7c0d4;
+      --line: rgba(255,255,255,.12);
+      --blue: #1d7cff;
+      --orange: #ff8a1d;
+      --radius: 22px;
+      --shadow: 0 24px 70px rgba(0,0,0,.42);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(29,124,255,.20), transparent 34rem),
+        radial-gradient(circle at 50% 55%, rgba(255,138,29,.10), transparent 28rem),
+        var(--bg);
+    }
+
+    main {
+      width: min(100%, 760px);
+      margin: 0 auto;
+      padding: 24px 16px 34px;
+    }
+
+    .card {
+      width: 100%;
+      margin: 0 auto;
+      padding: clamp(18px, 4vw, 32px);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(12,17,29,.94), rgba(5,7,13,.96));
+      box-shadow: var(--shadow);
+    }
+
+    .hero-image {
+      display: block;
+      width: min(100%, 430px);
+      height: auto;
+      margin: 0 auto 18px;
+      filter: drop-shadow(0 18px 35px rgba(0,0,0,.55));
+    }
+
+    .audio-box {
+      margin: 0 auto 18px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255,255,255,.045);
+      text-align: center;
+    }
+
+    .audio-box h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.7rem, 5.5vw, 2.7rem);
+      line-height: .98;
+      letter-spacing: -0.055em;
+    }
+
+    .audio-box p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: clamp(.98rem, 2.8vw, 1.08rem);
+      line-height: 1.45;
+    }
+
+    audio {
+      width: 100%;
+      display: block;
+    }
+
+    form {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+    }
+
+    .form-title {
+      margin: 2px 0 0;
+      text-align: center;
+      font-size: clamp(1.25rem, 4vw, 1.6rem);
+      letter-spacing: -0.035em;
+    }
+
+    .form-note {
+      margin: 0 0 8px;
+      text-align: center;
+      color: var(--muted);
+      font-size: .98rem;
+      line-height: 1.4;
+    }
+
+    label {
+      display: grid;
+      gap: 6px;
+      color: #eef3ff;
+      font-weight: 700;
+      font-size: .94rem;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px 15px;
+      color: var(--text);
+      background: rgba(255,255,255,.065);
+      font: inherit;
+      outline: none;
+    }
+
+    textarea {
+      min-height: 104px;
+      resize: vertical;
+    }
+
+    input::placeholder,
+    textarea::placeholder { color: rgba(255,255,255,.50); }
+
+    input:focus,
+    textarea:focus {
+      border-color: rgba(29,124,255,.85);
+      box-shadow: 0 0 0 4px rgba(29,124,255,.18);
+    }
+
+    button {
+      width: 100%;
+      border: 0;
+      border-radius: 16px;
+      padding: 16px 18px;
+      color: #06101f;
+      background: linear-gradient(135deg, var(--orange), #ffd15a);
+      font: inherit;
+      font-weight: 900;
+      font-size: 1.08rem;
+      cursor: pointer;
+      box-shadow: 0 16px 34px rgba(255,138,29,.22);
+    }
+
+    button:focus,
+    button:hover { transform: translateY(-1px); }
+
+    .scarcity {
+      margin: -2px 0 0;
+      text-align: center;
+      color: #ffd48a;
+      font-size: .92rem;
+      line-height: 1.4;
+    }
+
+    footer {
+      padding: 18px 0 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    footer a {
+      color: #ffffff;
+      font-weight: 800;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,.5);
+    }
+
+    .hidden {
+      position: absolute;
+      left: -9999px;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+    @media (max-width: 520px) {
+      main { padding: 14px 10px 24px; }
+      .card { padding: 14px; border-radius: 18px; }
+      .hero-image { width: min(100%, 330px); margin-bottom: 12px; }
+      .audio-box { padding: 13px; margin-bottom: 14px; }
+      input, textarea { padding: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="card" aria-label="KRONATRIX free AI visibility check lead capture form">
+      <picture>
+        <source srcset="spencer-aurelius.webp" type="image/webp">
+        <img class="hero-image" src="spencer-aurelius.png" alt="Spencer Aurelius, the KRONATRIX AI visibility mascot" width="430" height="742" decoding="async">
+      </picture>
+
+      <div class="audio-box">
+        <h1>Get Your Free AI Visibility Check</h1>
+        <p>Listen first, then submit your links below.</p>
+        <audio controls preload="metadata" aria-label="KRONATRIX free AI visibility check audio">
+          <source src="kronatrix-free-ai-visibility-check.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <form action="https://formspree.io/f/mnjygarq" method="POST">
+        <input type="hidden" name="_subject" value="New KRONATRIX Free AI Visibility Check Request">
+        <input class="hidden" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+
+        <h2 class="form-title">Send Your Links</h2>
+        <p class="form-note">Limited free audit spaces available each week.</p>
+
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" autocomplete="name" required>
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+        </label>
+
+        <label>
+          Business / Brand Name
+          <input type="text" name="business_name" placeholder="Your business or brand name" autocomplete="organization">
+        </label>
+
+        <label>
+          Website Link
+          <input type="url" name="website" placeholder="https://yourwebsite.com" inputmode="url" required>
+        </label>
+
+        <label>
+          Other Links / Message
+          <textarea name="message" placeholder="Paste social links, Google Business Profile, or tell us what you want checked"></textarea>
+        </label>
+
+        <button type="submit">Check My AI Visibility</button>
+        <p class="scarcity">Submit now before this week’s free checks are full.</p>
+      </form>
+    </section>
+
+    <footer>
+      Powered by <a href="https://kronatrix.co.uk/" rel="noopener">KRONATRIX</a>
+    </footer>
+  </main>
+</body>
+</html>
